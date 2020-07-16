@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+* {
+  scroll-behavior: smooth;
+  font-family: 'Muli';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-weight: 300;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img {
+  max-width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h1, h2, h3 {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.img-sm {
+  max-height: 50px;
+}
+
+.black {
+  color: #352F31;
+}
+
+.black-back {
+  background-color: #352F31;
+}
+
+.white {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.purple {
+  color: #8675E3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.purple-back {
+  background-color: #8675E3;
+}
+
+.purple-dark {
+  color: #45435D;
+}
+
+.purple-dark-back {
+  background-color: #45435D;
+}
+
+.green {
+  color: #A3E42F;
+}
+
+.green-border {
+  border-color: #A3E42F;
+}
+
+.gray-back {
+  background-color: #EFF0F0;
+}
+
+.content-wrap {
+  width: 600px;
+  padding: 20px;
+}
+
+*:focus {
+  outline: 2px solid #8675E3;
+  border: none;
 }

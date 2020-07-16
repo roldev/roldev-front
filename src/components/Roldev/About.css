@@ -1,0 +1,20 @@
+.about {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .content {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.about .block {
+    flex-basis: 48%;
+}
+
+.about .block p {
+    font-size: 18px;
+}
