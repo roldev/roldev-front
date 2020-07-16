@@ -23,7 +23,7 @@ export default () => {
               </form>
             </div>
             <div className="social">
-              <a href="https://github.com/roldev" target="_blank">
+              <a href="https://github.com/roldev" target="_blank" rel="noopener noreferrer">
                 <img class="img-sm" src="/images/social_media/github.svg" alt="github logo"/>
               </a>
             </div>
