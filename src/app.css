@@ -1,37 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
 * {
   scroll-behavior: smooth;
+  font-family: 'Muli';
 }
 
 body {
-  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue',
-    Helvetica, Arial, 'Lucida Grande', sans-serif;
   font-weight: 300;
   font-size: 16px;
   margin: 0;
   padding: 0;
 }
 
-a {
-  text-decoration: none;
-  color: #108db8;
-  font-weight: bold;
-}
-
 img {
   max-width: 100%;
 }
 
-nav {
-  width: 100%;
-  background: #108db8;
+h1, h2, h3 {
+  text-transform: uppercase;
+  margin: 0;
 }
 
-nav a {
+.img-sm {
+  max-height: 50px;
+}
+
+.black {
+  color: #352F31;
+}
+
+.black-back {
+  background-color: #352F31;
+}
+
+.white {
   color: white;
-  padding: 1rem;
-  display: inline-block;
 }
 
-.content {
-  padding: 1rem;
+.purple {
+  color: #8675E3;
+}
+
+.purple-back {
+  background-color: #8675E3;
+}
+
+.purple-dark {
+  color: #45435D;
+}
+
+.purple-dark-back {
+  background-color: #45435D;
+}
+
+.green {
+  color: #A3E42F;
+}
+
+.green-border {
+  border-color: #A3E42F;
+}
+
+.gray-back {
+  background-color: #EFF0F0;
+}
+
+.content-wrap {
+  width: 600px;
+  padding: 20px;
+}
+
+*:focus {
+  outline: 2px solid #8675E3;
+  border: none;
 }
