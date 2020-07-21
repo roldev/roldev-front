@@ -70,7 +70,7 @@ export default () => {
 
     const token = await executeRecaptcha('contact_form');
 
-    fetch('process.env.REACT_APP_BACKEND', {
+    fetch(process.env.REACT_APP_BACKEND, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
