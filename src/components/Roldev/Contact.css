@@ -2,11 +2,18 @@
     height: 450px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: var(--main-black);
+    color: var(--main-green);
 }
 
-.contact-wrap {
+.contact .content-wrap {
+    height: fit-content;
+}
+
+.contact .contact-wrap {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-flow: column;
     height: 100%
 }
@@ -14,6 +21,7 @@
 .contact-form {
     width: 100%;
     height: 100%;
+    margin-bottom: 10px;
 }
 
 .contact-wrap h2 {
@@ -28,15 +36,20 @@
     align-content: flex-start;
 }
 
+.contact-form .error {
+    color: red;
+    margin-bottom: 10px;
+}
+
 .contact-form form .half-width {
     flex-basis: 49%;
 }
 
 .contact-form form input:not(.submit-btn),
 .contact-form form textarea {
-    font-weight: bold;
+    font-weight: 100;
     width: 100%;
-    line-height: 1.5em;
+    line-height: 2em;
     margin-bottom: 10px;
     box-sizing: border-box;
     border: none;
@@ -47,14 +60,33 @@
 }
 
 .contact-form form textarea {
-    height: 55%;
+    height: 10em;
     resize: none;
 }
 
 .contact-form form input.submit-btn {
     text-transform: uppercase;
-    border-width: 1px;
-    height: 10%;
+    border: 2px solid var(--main-green);
+    height: 3em;
     width: 50%;
     font-weight: bold;
+    color: var(--main-green);
+    background-color: var(--main-black);
+    cursor: pointer;
+}
+
+.contact-form form input.submit-btn:hover {
+    border: 2px solid var(--main-green-dark);
+    color: var(--main-green-dark);
+}
+
+.contact-form form input.submit-btn:focus {
+    border: none;
+    outline: none;
+    color: var(--main-white);
+    background-color: var(--main-purple);
+}
+
+.success {
+    align-self: center;
 }

@@ -5,6 +5,16 @@
   font-family: 'Muli';
 }
 
+html {
+  --main-black: #352F31;
+  --main-green: #A3E42F;
+  --main-green-dark: #8ACB1A;
+  --main-purple: #8675E3;
+  --main-purple-dark: #45435D;
+  --main-white: white;
+  --main-gray: #EFF0F0;
+}
+
 body {
   font-weight: 300;
   font-size: 16px;
@@ -25,48 +35,12 @@ h1, h2, h3 {
   max-height: 50px;
 }
 
-.black {
-  color: #352F31;
-}
-
-.black-back {
-  background-color: #352F31;
-}
-
-.white {
-  color: white;
-}
-
-.purple {
-  color: #8675E3;
-}
-
-.purple-back {
-  background-color: #8675E3;
-}
-
-.purple-dark {
-  color: #45435D;
-}
-
-.purple-dark-back {
-  background-color: #45435D;
-}
-
-.green {
-  color: #A3E42F;
-}
-
-.green-border {
-  border-color: #A3E42F;
-}
-
-.gray-back {
-  background-color: #EFF0F0;
+.img-xs {
+  max-height: 25px;
 }
 
 .content-wrap {
-  width: 600px;
+  max-width: 1200px;
   padding: 20px;
 }
 
