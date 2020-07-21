@@ -1,5 +1,5 @@
 .contact {
-    height: 450px;
+    padding: 55px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,6 +9,7 @@
 
 .contact .content-wrap {
     height: fit-content;
+    width: 800px;
 }
 
 .contact .contact-wrap {
@@ -39,6 +40,8 @@
 .contact-form .error {
     color: red;
     margin-bottom: 10px;
+    width: fit-content;
+    font-size: 14px;
 }
 
 .contact-form form .half-width {
