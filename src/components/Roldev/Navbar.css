@@ -27,3 +27,15 @@ nav a {
 nav a:hover {
     color: var(--main-purple-darl)
 }
+
+@media only screen and (max-width: 650px) {
+    nav .menu {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+    
+    nav .menu a:not(:nth-last-child(1)) {
+        margin: auto auto 5px;
+    }   
+}
