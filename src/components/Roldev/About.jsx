@@ -8,7 +8,7 @@ export default () => (
       <div className="block">
         <h1>who i am</h1>
         <p>
-          A capable, versitile and experienced full-stack developer, that will quickly learn the code base to deliver quick, and excelent results.
+          A capable, versatile and experienced full-stack developer, that will quickly learn the code base to deliver quick, and excellent results.
         </p>
       </div>
       <div className="block">
