@@ -109,11 +109,6 @@ export default () => {
                   <span className="success">Message Sent Successfully!</span>}
               </form>
             </div>
-            <div className="social">
-              <a href="https://github.com/roldev" target="_blank" rel="noopener noreferrer">
-                <img className="img-xs" src="/images/social_media/github.svg" alt="github logo"/>
-              </a>
-            </div>
           </div>
         </div>
       </div>

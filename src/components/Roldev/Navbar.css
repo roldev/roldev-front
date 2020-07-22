@@ -13,7 +13,12 @@ nav .content-wrap {
     width: 100%;
 }
 
-nav .menu a:not(:nth-last-child(1)) {
+nav .menu {
+    display: flex;
+    align-items: center;
+}
+
+nav .menu a.internal:not(:nth-last-child(1)) {
     margin-right: 30px;
 }
 
@@ -28,6 +33,18 @@ nav a:hover {
     color: var(--main-purple-darl)
 }
 
+nav .menu .social {
+    height: 25px;
+}
+
+nav .menu .social img {
+    height: 25px;
+}
+
+nav .menu .social a:not(:nth-last-child(1)) {
+    margin-right: 15px;
+}
+
 @media only screen and (max-width: 650px) {
     nav .menu {
         display: flex;
@@ -38,4 +55,9 @@ nav a:hover {
     nav .menu a:not(:nth-last-child(1)) {
         margin: auto auto 5px;
     }   
+
+    nav .menu a.internal:not(:nth-last-child(1)) {
+        margin-right: 0;
+        margin-left: 0;
+    }
 }
