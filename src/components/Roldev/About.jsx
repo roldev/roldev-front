@@ -8,20 +8,20 @@ export default () => (
       <div className="block">
         <h1>who i am</h1>
         <p>
-          A capable, versatile and experienced full-stack developer, that will quickly learn the code base to deliver quick, and excellent results.
+          An experienced and capable full-stack and web developer with proven industry experience that will tailor a technological solution to your needs.
         </p>
       </div>
       <div className="block">
         <h1>what i do</h1>
         <p>
-          Build, fix, add, or upgrade web-applications, and desktop applications. 
+          Build from scratch, or upgrade and maintain existing websites, applications or desktop programs.
         </p>
       </div>
       <div className="block">
         <h1>what i've done</h1>
         <p>
-          Developed a low-level cutting-edge anti-malware application as a part of IBM Security Group. <br />
-          Developed for Buyme, and Madlan full-stack features to increase functionality and user throughput.
+          Developed and maintained a web and desktop solutions in real-estate, e-commerce and cyber security fields. <br />
+          Previously worked for industry leading companies including BuyMe, Localize, Trusteer and IBM Security.
         </p>
       </div>
       <div className="block">
