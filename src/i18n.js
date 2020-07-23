@@ -11,7 +11,7 @@ i18n.use(LanguageDetector).init({
                     "language": "ע"
                 },
                 banner: {
-                    "header": "YOUR WEBSITE, JUST LIKE YOU LIKE IT",
+                    "header": "YOUR WEBSITE, JUST THE WAY YOU LIKE IT",
                     "get-proposal": "get proposal"
                 },
                 about: {
@@ -26,7 +26,7 @@ i18n.use(LanguageDetector).init({
                     "what-i-did": {
                         "header": "what i did",
                         "content": {
-                            "part-one": "Developed and maintained a web and desktop solutions in real-estate, e-commerce and cyber security fields.",
+                            "part-one": "Developed and maintained web and desktop solutions in real-estate, e-commerce and cyber security fields.",
                             "part-two": "Previously worked for industry leading companies including BuyMe, Localize, Trusteer and IBM Security."
                         }
                     },
@@ -58,7 +58,7 @@ i18n.use(LanguageDetector).init({
                     "language": "en"
                 },
                 banner: {
-                    "header": "האתר שלך, כמו שאתה אוהב",
+                    "header": "האתר שלך, כמו שתמיד רצית",
                     "get-proposal": "קבל/י הצעה"
                 },
                 about: {
