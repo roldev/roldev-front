@@ -32,7 +32,8 @@
     border: solid 3px;
     padding: 1em 1.5em;
     text-decoration: none;
-    color: var(--main-green)
+    color: var(--main-green);
+    text-transform: uppercase;
 }
 
 .buttons a:hover {
