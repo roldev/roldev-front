@@ -79,8 +79,8 @@
 }
 
 .contact-form form input.submit-btn:hover {
-    border: 2px solid var(--main-green-dark);
-    color: var(--main-green-dark);
+    border: 2px solid var(--main-green-hover);
+    color: var(--main-green-hover);
 }
 
 .contact-form form input.submit-btn:focus {
