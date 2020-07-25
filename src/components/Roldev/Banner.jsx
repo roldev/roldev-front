@@ -5,7 +5,7 @@ import { HashLink } from 'react-router-hash-link';
 import './Banner.css';
 
 export default () => {
-    const {t, i18n} = useTranslation();
+    const {t} = useTranslation();
 
     return (
         <div className="banner">

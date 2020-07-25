@@ -4,10 +4,10 @@ import { useTranslation } from 'react-i18next';
 import './About.css';
 
 export default () => {
-    const {t, i18n} = useTranslation();
+    const {t} = useTranslation();
 
     return (
-        <div className="about">
+        <div className="about" id="about">
             <div className="content-wrap content">
             <div className="block">
                 <h1>{t('about.who-i-am.header')}</h1>

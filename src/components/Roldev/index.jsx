@@ -7,7 +7,7 @@ import About from './About';
 import Contact from './Contact';
 
 export default () => {
-    const {t, i18n} = useTranslation();
+    const {i18n} = useTranslation();
     const rtlClass = i18n.language === 'he-IL' ? 'rtl' : '';
 
     return (
