@@ -45,7 +45,8 @@ i18n.use(LanguageDetector).init({
                     "success": "Message Sent Successfully!",
                     "error": {
                         "phone": "Phone number is required and should be at least 9 numbers long",
-                        "email": "Email field is required"
+                        "email": "Email field is required",
+                        "submit": "An error submitting the message has occurred please send an email to rohi@roldev.cc or call 052-3776737"
                     }
                 }
             }
@@ -92,7 +93,8 @@ i18n.use(LanguageDetector).init({
                     "success": "ההודעה נשלחה בהצלחה!",
                     "error": {
                         "phone": "מספר הטלפון דרוש ועליו להיות לפחות 9 ספרות",
-                        "email": "דואר אלקטרוני הוא שדה נדרש"
+                        "email": "דואר אלקטרוני הוא שדה נדרש",
+                        "submit": "קרתה שגיאה בשליחת ההודעה, אנא שלח/י הודעה ל-rohi@roldev.cc או התקשר/י ל-052-3776737"
                     }
                 }
             }

@@ -9,7 +9,7 @@ export default () => {
 
     const { executeRecaptcha } = useGoogleReCaptcha();
 
-    const [contactSent, setContactSent] = useState(false);
+    const [contactSent, setContactSent] = useState({sent: false, success: false});
 
     const initialContactData = {
         name: "",
@@ -84,11 +84,12 @@ export default () => {
             })
         })
         .then(response => {
-            setContactSent(response.status === 201);
+            setContactSent({sent: true, success: response.status === 201});
             setContactFormData(initialContactData);
         })
         .catch(err => {
             console.log(err);
+            setContactSent({sent: true, success: false});
         });
     }
 
@@ -108,8 +109,10 @@ export default () => {
                             <span className='error'>{t('contact.error.email')}</span>}
                         <textarea id="message" placeholder={t('contact.message')} value={contactFormData.message} onChange={handleChange}></textarea>
                         <input type="submit" value={t('contact.submit')} className="submit-btn"></input>
-                        {contactSent &&
+                        {contactSent.sent && contactSent.success &&
                             <span className="success">{t('contact.success')}</span>}
+                        {contactSent.sent && !contactSent.success &&
+                            <span className="error">{t('contact.error.submit')}</span>}
                     </form>
                     </div>
                 </div>
