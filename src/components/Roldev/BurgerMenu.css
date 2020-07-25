@@ -24,8 +24,9 @@
 }
 
 .menu-wrap .menu .change-language {
-    background-color: var(--main-white);
+    background-color: var(--main-black);
     border: 1px solid var(--main-black);
+    color: var(--main-white);
 }
 
 .menu-wrap .menu .social {
@@ -79,6 +80,7 @@
 
     .menu-wrap.open .burger-wrap .burger-line:first-child {
         transform: rotate(45deg);
+        width: 2rem;
     }
   
     .menu-wrap.open .burger-wrap .burger-line:nth-child(2) {
@@ -88,10 +90,11 @@
 
     .menu-wrap.open .burger-wrap .burger-line:nth-child(3) {
         transform: rotate(-45deg);
+        width: 2rem;
     }
 
     .burger-line {
-        width: 2rem;
+        width: 1.75rem;
         height: 0.25rem;
         background: var(--main-black);
         border-radius: 10px;
@@ -116,9 +119,6 @@
 
     .rtl .menu-wrap .menu {
         transform: translateX(-100%);
-    }
-
-    .rtl .menu-wrap .menu {
         right: unset;
         left: 0;
     }
@@ -130,7 +130,6 @@
     .menu-wrap .menu a {
         font-size: 2rem;
         text-transform: uppercase;
-        padding: 2rem 0;
         font-weight: bold;
         letter-spacing: 0.5rem;
         color: var(--main-black);
@@ -138,8 +137,18 @@
         transition: color 0.3s linear;
     }
 
-    .menu-wrap .menu input {
+    .menu-wrap .menu .item {
+        padding: 0 0 0 0;
         margin: 0 0 32px 0;
+    }
+
+    .menu-wrap .menu .item:not(:nth-last-child(1)) {
+        margin-right: 0;
+    }
+
+    .menu-wrap .menu .change-language {
+        margin: 0 0 32px 0;
+        padding: 0 5px;
         font-size: 20px;
     }
 
