@@ -12,7 +12,7 @@ export default () => {
 
     useEffect(() => {
         // backend is a free heroku which means it goes to sleep every 30 minutes
-        fetch(process.env.REACT_APP_BACKEND+'/api/keep-alive/', {
+        fetch(process.env.REACT_APP_BACKEND+'/keep-alive/', {
             method: 'GET'
         })
         .catch(err => {
