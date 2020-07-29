@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { useTranslation } from 'react-i18next';
 
 import Navbar from './Navbar';
@@ -9,6 +9,16 @@ import Contact from './Contact';
 export default () => {
     const {i18n} = useTranslation();
     const rtlClass = i18n.language === 'he-IL' ? 'rtl' : '';
+
+    useEffect(() => {
+        // backend is a free heroku which means it goes to sleep every 30 minutes
+        fetch(process.env.REACT_APP_BACKEND+'/api/keep-alive/', {
+            method: 'GET'
+        })
+        .catch(err => {
+            console.log(err);
+        });
+    }, []);
 
     return (
         <div className={rtlClass}>
