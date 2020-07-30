@@ -72,16 +72,19 @@
         outline: none;
     }
 
+    .menu-wrap.opening .burger-wrap .burger-line:first-child,
     .menu-wrap.open .burger-wrap .burger-line:first-child {
         transform: rotate(45deg);
         width: 2rem;
     }
   
+    .menu-wrap.opening .burger-wrap .burger-line:nth-child(2),
     .menu-wrap.open .burger-wrap .burger-line:nth-child(2) {
         opacity: 0;
         transform: translateX(20px);
     }
 
+    .menu-wrap.opening .burger-wrap .burger-line:nth-child(3),
     .menu-wrap.open .burger-wrap .burger-line:nth-child(3) {
         transform: rotate(-45deg);
         width: 2rem;
