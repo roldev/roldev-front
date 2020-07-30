@@ -41,6 +41,9 @@
     width: 100%;
     flex-direction: row;
     justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-box-pack: center;
 }
 
 .buttons a {
