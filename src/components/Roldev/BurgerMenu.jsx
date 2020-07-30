@@ -16,14 +16,27 @@ export default () => {
         }
     };
 
-    const [open, setOpen] = useState(false);
+    const MenuStates = {
+        closed: "closed",
+        closing: "closing",
+        open: "open",
+        opening: "opening"
+    };
+    const [openState, setOpenState] = useState(MenuStates.closed);
 
-    const handleOpenMenu = () => setOpen(!open);
-    const openMenuClass = open ? 'open' : '';
+    const handleClickMenu = () => {
+        if(openState === MenuStates.open) {
+            setOpenState(MenuStates.closing);
+            setTimeout(() => { setOpenState(MenuStates.closed); }, 290);
+        } else {
+            setOpenState(MenuStates.opening);
+            setTimeout(() => { setOpenState(MenuStates.open); }, 290);
+        }
+    };
 
     return (
-        <div className={`menu-wrap ${openMenuClass}`}>
-            <div className="burger-wrap" onClick={handleOpenMenu}>
+        <div className={`menu-wrap ${openState}`}>
+            <div className="burger-wrap" onClick={handleClickMenu}>
                 <div className="burger-line" />
                 <div className="burger-line" />
                 <div className="burger-line" />

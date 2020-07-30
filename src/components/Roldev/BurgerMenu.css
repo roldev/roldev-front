@@ -53,12 +53,6 @@
 }
 
 @media only screen and (max-width: 650px) {
-    .menu-wrap .menu {
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-    }
-
     .burger-wrap {
         position: relative;
         top: 5%;
@@ -103,7 +97,12 @@
         transform-origin: 1px;
     }
     
-    .menu-wrap .menu {
+    .menu-wrap.closed .menu {
+        display: none;
+    }
+
+    .menu-wrap.closing .menu {
+        animation: disappear 0.3s;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -113,18 +112,113 @@
         position: absolute;
         top: 0;
         right: 0;
-        transition: transform 0.3s ease-in-out;
-        transform: translateX(100%);
     }
 
-    .rtl .menu-wrap .menu {
-        transform: translateX(-100%);
+    .rtl .menu-wrap.closing .menu {
+        animation: disappear-rtl 0.3s;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: var(--main-white);
+        height: 100vh;
+        padding: 2rem;
+        position: absolute;
+        top: 0;
+        right: unset;
+    }
+
+    .menu-wrap.opening .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: var(--main-white);
+        height: 100vh;
+        padding: 2rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        animation: appear 0.3s;
+    }
+
+    .rtl .menu-wrap.opening .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: var(--main-white);
+        height: 100vh;
+        padding: 2rem;
+        position: absolute;
+        top: 0;
         right: unset;
         left: 0;
+        animation: appear-rtl 0.3s;
     }
 
     .menu-wrap.open .menu {
-        transform: translateX(0);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: var(--main-white);
+        height: 100vh;
+        padding: 2rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        overflow: hidden;
+    }
+
+    .rtl .menu-wrap.open .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: var(--main-white);
+        height: 100vh;
+        padding: 2rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: unset;
+        overflow: hidden;
+    }
+
+    @keyframes appear {
+        0% {
+            transform: translateX(100%);
+        }
+    
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes disappear {
+        0% {
+            transform: translateX(0);
+        }
+    
+        100% {
+            transform: translateX(100%);
+        }
+    }
+
+    @keyframes appear-rtl {
+        0% {
+            transform: translateX(-100%);
+        }
+    
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes disappear-rtl {
+        0% {
+            transform: translateX(0);
+        }
+    
+        100% {
+            transform: translateX(-100%);
+        }
     }
 
     .menu-wrap .menu a {
@@ -134,7 +228,6 @@
         letter-spacing: 0.5rem;
         color: var(--main-black);
         text-decoration: none;
-        transition: color 0.3s linear;
     }
 
     .menu-wrap .menu .item {

@@ -1,5 +1,4 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 import { HashLink } from 'react-router-hash-link';
 
 import './Navbar.css';
