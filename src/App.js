@@ -1,15 +1,18 @@
 import React from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
-import './App.css';
+import ReactGA from 'react-ga';
 
+import './App.css';
 import Roldev from './components/Roldev';
 
 export default () => {
-  return (
-    <BrowserRouter>
-      <Switch>
-        <Route exact path="/" component={Roldev} />
-      </Switch>
-    </BrowserRouter>
-  );
+    ReactGA.initialize(process.env.REACT_APP_GA_ID, { standardImplementation: true });
+  
+    return (
+        <BrowserRouter>
+            <Switch>
+                <Route exact path="/" component={Roldev} />
+            </Switch>
+        </BrowserRouter>
+    );
 };
