@@ -1,6 +1,8 @@
 import React, {useEffect} from 'react';
 import { useTranslation } from 'react-i18next';
 
+import {GApageView} from '../../index';
+
 import Navbar from './Navbar';
 import Banner from './Banner';
 import About from './About';
@@ -19,6 +21,8 @@ export default () => {
             console.log(err);
         });
     }, []);
+
+    useEffect(() => { GApageView("landing"); }, []);
 
     return (
         <div className={rtlClass}>
